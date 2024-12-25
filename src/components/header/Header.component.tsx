@@ -50,10 +50,10 @@ export default function HeaderComponent(): ReactElement {
             return (
               <li key={item?.id}>
                 <Link
-                  href={item.href}
+                  href={item?.href}
                   className={clsx(pathname === item.href && styles.active)}
                 >
-                  {item.title}
+                  {item?.title}
                 </Link>
               </li>
             );

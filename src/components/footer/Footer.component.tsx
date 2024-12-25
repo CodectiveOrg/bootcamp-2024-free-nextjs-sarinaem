@@ -3,9 +3,9 @@ import { ReactElement } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import idkLogo from "@/assets/logo/idk.svg";
 import certificateLogo from "@/assets/logo/certificate.svg";
 import enamadLogo from "@/assets/logo/enamad.svg";
-import idkLogo from "@/assets/logo/idk.svg";
 
 import MingcuteLinkedinLine from "@/icons/MingcuteLinkedinLine";
 import MingcuteYoutubeLine from "@/icons/MingcuteYoutubeLine";
@@ -27,29 +27,29 @@ export default function FooterComponent(): ReactElement {
         <ul className={styles.certificates}>
           <li>
             <Link href="#">
-              <Image src={certificateLogo} alt="certificate logo" />
+              <Image src={idkLogo} alt="IDK Logo" />
             </Link>
           </li>
           <li>
             <Link href="#">
-              <Image src={enamadLogo} alt="enamad logo" />
+              <Image src={certificateLogo} alt="Certificate Logo" />
             </Link>
           </li>
           <li>
             <Link href="#">
-              <Image src={idkLogo} alt="idk logo" />
+              <Image src={enamadLogo} alt="Enamad Logo" />
             </Link>
           </li>
         </ul>
         <ul className={styles.socials}>
           <li>
-            <Link href="https://t.me/sarinaem" target="_blank">
+            <Link href="https://t.me/Codective" target="_blank">
               <MingcuteTelegramLine />
             </Link>
           </li>
           <li>
             <Link
-              href="https://www.linkedin.com/in/sarinaemadi/"
+              href="https://www.linkedin.com/in/bijanprogrammer/"
               target="_blank"
             >
               <MingcuteLinkedinLine />
@@ -67,7 +67,7 @@ export default function FooterComponent(): ReactElement {
       </div>
       <p className={styles.copy}>
         تمامی حقوق مادی و معنوی این وب‌سایت، خدمات و محتوای مربوط به آن متعلق به
-        من می‌باشد!
+        من است!
       </p>
     </footer>
   );

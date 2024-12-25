@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 
 import HeaderComponent from "@/components/header/Header.component";
+import FooterComponent from "@/components/footer/Footer.component";
 
 import "./globals.css";
-import FooterComponent from "@/components/footer/Footer.component";
 
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],
