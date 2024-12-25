@@ -1,0 +1,33 @@
+/* css reset */
+*, *::after, *::before {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+input,
+label,
+select,
+textarea,
+button,
+fieldset,
+legend,
+datalist,
+output,
+option,
+optgroup {
+  font: inherit;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+}
