@@ -12,6 +12,11 @@ export default async function Home() {
 
   return (
     <main>
+      <button>click</button>
+      <form action="#">
+        <label>username</label>
+        <input type="text" />
+      </form>
       <h1>سلام دوست من!</h1>
       <p>
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
