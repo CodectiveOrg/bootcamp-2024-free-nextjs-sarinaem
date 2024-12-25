@@ -18,15 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
-      <body>
-        <header>
-          <ul>
-            <li>خانه</li>
-            <li>محصولات</li>
-          </ul>
-        </header>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
