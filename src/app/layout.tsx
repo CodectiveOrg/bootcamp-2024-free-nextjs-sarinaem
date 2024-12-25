@@ -19,14 +19,19 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
-        <header style={{display: "flex", justifyContent: "space-between", flexDirection: "row"}}>
+        <header
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "row",
+          }}
+        >
           <ul>
             <li>خانه</li>
             <li>محصولات</li>
           </ul>
         </header>
         {children}
-
       </body>
     </html>
   );
