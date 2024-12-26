@@ -1,13 +1,20 @@
 import type { Metadata } from "next";
-import { Vazirmatn } from 'next/font/google'
+import { Vazirmatn } from "next/font/google";
+
+import HeaderComponent from "@/components/header/Header.component";
+import FooterComponent from "@/components/footer/Footer.component";
+
 import "./globals.css";
+
 const vazirmatn = Vazirmatn({
-  subsets: ['latin', 'arabic'],
-  display: 'swap',
-})
+  subsets: ["latin", "arabic"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "پزشک‌یاب",
-  description: "سامانه آنلاین نوبت‌دهی دکتر با حضور بیش از ۱۰۰۰ متخصص از سراسر کشور",
+  description:
+    "سامانه آنلاین نوبت‌دهی دکتر با حضور بیش از ۱۰۰۰ متخصص از سراسر کشور",
 };
 
 export default function RootLayout({
@@ -18,7 +25,12 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.className}>
       <body>
-        {children}
+        <HeaderComponent />
+        <main>{children}</main>
+        <p className="tagline">
+          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+        </p>
+        <FooterComponent />
       </body>
     </html>
   );
