@@ -1,12 +1,17 @@
 "use client";
 
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
 
 import Link from "next/link";
+
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
+import MingcuteMoonFill from "@/assets/dark&light-mode/MingcuteMoonFill";
+import MingcuteSunLine from "@/assets/dark&light-mode/MingcuteSunLine";
+
 import styles from "./header.module.css";
+
 const navItems = [
   {
     id: 1,
@@ -40,10 +45,17 @@ const navItems = [
   },
 ];
 export default function HeaderComponent(): ReactElement {
-  const pathname = usePathname();
+  const [theme, setTheme] = useState("light");
 
+  const pathname = usePathname();
   return (
     <header className={styles.header}>
+      <button
+        className={styles.changeBackground}
+        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      >
+        {theme === "light" ? <MingcuteSunLine /> : <MingcuteMoonFill />}
+      </button>
       <nav>
         <ul>
           {navItems.map((item) => {

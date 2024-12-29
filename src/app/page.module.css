@@ -11,7 +11,7 @@
     align-items: center;
     gap: 1rem;
 
-    font-size: 2.5rem;
+    font-size: var(--fz-700);
 
     svg {
       font-size: 1.5em;
@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 2rem;
 
     > ul {
       display: flex;
@@ -34,6 +35,11 @@
         padding: 0.25rem 0.75rem;
 
         border-radius: 999rem;
+
+        &:hover {
+          background-color: var(--color-secendry);
+          color: var(--color-gray-98);
+        }
       }
     }
   }

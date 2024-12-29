@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 import GlobalSearchBoxComponent from "@/components/global-search-box/GlobalSearchBox.component";
 
-import Doctorfinder from "@/logo/doctorfinder";
+import Doctorfinder from "@/logo/Doctorfinder";
 
 import styles from "./page.module.css";
 
@@ -18,6 +18,7 @@ export default function Home(): ReactElement {
         <div className={styles.title}>آخرین جستجوهای شما</div>
         <ul>
           <li>ارتوپد</li>
+          <li>چشم</li>
           <li>قلب و عروق</li>
         </ul>
       </div>
