@@ -1,6 +1,10 @@
 # Doctor Finder (پزشک‌یاب)
 
-[![demo](assets/demo/demo-site.png)](https://doctorfind.vercel.app)
+## Demo
+
+See the [demo](https://doctorfind.vercel.app) or click the image below:
+
+[![Doctor Find Demo](assets/demo/demo-site.png)](https://doctorfind.vercel.app)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
