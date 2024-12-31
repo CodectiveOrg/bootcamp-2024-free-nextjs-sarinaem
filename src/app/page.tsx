@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 import GlobalSearchBoxComponent from "@/components/global-search-box/GlobalSearchBox.component";
 
-import DoctorFinderLogo from "@/logo/DoctorFinder.logo";
+import DoctorFinder from "@/logo/DoctorFinder";
 
 import styles from "./page.module.css";
 
@@ -10,7 +10,7 @@ export default function Home(): ReactElement {
   return (
     <div className={styles.home}>
       <h1>
-        <DoctorFinderLogo />
+        <DoctorFinder />
         پزشک‌یاب
       </h1>
       <GlobalSearchBoxComponent />
