@@ -20,6 +20,7 @@ export default function Home(): ReactElement {
           <li>ارتوپد</li>
           <li>چشم</li>
           <li>قلب و عروق</li>
+          <li>زنان و زایمان</li>
         </ul>
       </div>
     </div>
