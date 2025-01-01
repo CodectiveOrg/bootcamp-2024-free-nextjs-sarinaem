@@ -24,4 +24,4 @@ export function DoctorFinder(props: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-export default MyDoctorLogo;
+export default DoctorFinder;
