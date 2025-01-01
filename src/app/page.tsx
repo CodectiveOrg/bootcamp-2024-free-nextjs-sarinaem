@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 import GlobalSearchBoxComponent from "@/components/global-search-box/GlobalSearchBox.component";
 
-import DoctorFinder from "@/logo/DoctorFinder";
+import DoctorFinder from "@/logo/Doctorfinder";
 
 import styles from "./page.module.css";
 
