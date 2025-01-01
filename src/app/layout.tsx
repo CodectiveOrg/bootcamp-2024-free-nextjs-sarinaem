@@ -5,6 +5,7 @@ import HeaderComponent from "@/components/header/Header.component";
 import FooterComponent from "@/components/footer/Footer.component";
 
 import "./globals.css";
+
 import "@/styles/typography.css";
 
 const vazirmatn = Vazirmatn({

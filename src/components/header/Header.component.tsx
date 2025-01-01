@@ -45,9 +45,11 @@ const navItems = [
   },
 ];
 export default function HeaderComponent(): ReactElement {
+
   const [theme, setTheme] = useState("light");
 
   const pathname = usePathname();
+        
   return (
     <header className={styles.header}>
       <button
@@ -56,6 +58,7 @@ export default function HeaderComponent(): ReactElement {
       >
         {theme === "light" ? <MingcuteSunLine /> : <MingcuteMoonFill />}
       </button>
+      
       <nav>
         <ul>
           {navItems.map((item) => {
