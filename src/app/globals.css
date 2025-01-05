@@ -13,11 +13,12 @@
   --color-default-background: var(--color-gray-10);
   --color-default-foreground: var(--color-gray-98);
 
-  --color-primary: hsl(120deg 50% 48%);
+  --color-primary: hsl(41, 92%, 61%);
   --color-primary-fade: hsl(120deg 50% 96%);
-  --color-primary-lighter: hsl(120deg 50% 52%);
-  --color-primary-darker: hsl(120deg 50% 44%);
+  --color-primary-lighter: hsl(41, 92%, 43%);
+  --color-primary-darker: hsl(41, 92%, 55%);
   --color-primary-opposite: var(--color-gray-10);
+  --color-secendry: hsl(256, 98%, 37%);
 
   --border-radius: 0.875rem;
 
@@ -79,6 +80,8 @@ body {
 
   min-block-size: 100vh;
   min-block-size: 100dvh;
+
+  font-size: var(--fz-400);
 
   > * {
     padding-inline: var(--full-width-padding-inline);

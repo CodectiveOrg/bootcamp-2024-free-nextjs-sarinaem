@@ -6,6 +6,8 @@ import FooterComponent from "@/components/footer/Footer.component";
 
 import "./globals.css";
 
+import "@/styles/typography.css";
+
 const vazirmatn = Vazirmatn({
   subsets: ["latin", "arabic"],
   display: "swap",
@@ -28,7 +30,7 @@ export default function RootLayout({
         <HeaderComponent />
         <main>{children}</main>
         <p className="tagline">
-          نوبت دهی پزشکی، سامانه نوبت دهی اینترنتی بیمارستان و پزشکان
+          نوبت‌دهی پزشکی، سامانه نوبت‌دهی اینترنتی بیمارستان و پزشکان
         </p>
         <FooterComponent />
       </body>
