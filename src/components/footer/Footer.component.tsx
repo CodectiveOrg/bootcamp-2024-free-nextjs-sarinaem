@@ -36,7 +36,7 @@ export default function FooterComponent(): ReactElement {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="https://enamad.ir/">
               <Image src={enamadLogo} alt="Enamad Logo" />
             </Link>
           </li>
@@ -49,7 +49,7 @@ export default function FooterComponent(): ReactElement {
           </li>
           <li>
             <Link
-              href="https://www.linkedin.com/in/bijanprogrammer/"
+              href="https://www.linkedin.com/in/sarinaemadi/"
               target="_blank"
             >
               <MingcuteLinkedinLine />

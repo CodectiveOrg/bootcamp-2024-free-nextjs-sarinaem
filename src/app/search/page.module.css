@@ -1,0 +1,15 @@
+.page {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 4rem;
+  }
+
+  .main {
+    background-color: var(--color-gray-16);
+
+    margin-top: 2rem;
+  }
+}
