@@ -6,6 +6,15 @@
 
     margin-top: 4rem;
   }
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+
+    outline: invert;
+  }
 
   .main {
     background-color: var(--color-gray-16);
