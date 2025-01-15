@@ -17,10 +17,9 @@ export default function Home(): ReactElement {
       <div className={styles.history}>
         <div className={styles.title}>آخرین جستجوهای شما</div>
         <ul>
-          <li>ارتوپد</li>
           <li>چشم</li>
-          <li>قلب و عروق</li>
-          <li>زنان و زایمان</li>
+          <li>یزد</li>
+          <li>دکتر کرمانی</li>
         </ul>
       </div>
     </div>

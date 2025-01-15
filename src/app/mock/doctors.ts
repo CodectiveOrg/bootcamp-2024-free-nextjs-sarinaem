@@ -1,26 +1,5 @@
 import { DoctorModel } from "@/models/doctor.model";
 
-/* You can scrape search api using this code
-temp1.map((x) => ({
-  id: x.id,
-  name: x.title,
-  image: x.image,
-  isVerified: true,
-  gender: x.gender === 1 ? "آقا" : "خانم",
-  averageRating: x.rate_info.quality_of_treatment,
-  totalVotes: x.rate_info.rates_count,
-  address: x.display_address,
-  firstAvailableAppointment: x.actions[1].top_title.substring(
-    21,
-    x.actions[0].top_title.length - 11,
-  ),
-  brief: x.expertises[0].alias_title,
-  degree: x.expertises[0].degree.name,
-  expertise: x.expertises[0].expertise_groups[0].name,
-  badges: x.badges.map((y) => y.title),
-}));
-*/
-
 export const doctors: DoctorModel[] = [
   {
     id: "76b55838-346f-11eb-8d4b-005056b09c11",
@@ -29,10 +8,10 @@ export const doctors: DoctorModel[] = [
       "/getImage/p24/search-men/9b45c32fe70f1321b4b349bc1a5aff9c.jpeg?size=150",
     isVerified: true,
     gender: "آقا",
-    averageRating: 4.7,
+    averageRating: 4.2,
     totalVotes: 1973,
-    address: "تهران,جردن، بلوار گلشهر ، پلاک 7، طبقه سوم واحد 7",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    address: "تهران، بلوار گلشهر ، پلاک 7، طبقه سوم واحد 7",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "عفونت مغزی،عفونت گوش و حلق و بینی،سلولیت",
     degree: "متخصص",
     expertise: "عفونی",
@@ -45,7 +24,7 @@ export const doctors: DoctorModel[] = [
       "/getImage/p24/search-women/8cd097208180a48ff5206f6122b9a5a5.jpg?size=150",
     isVerified: true,
     gender: "خانم",
-    averageRating: 4.75,
+    averageRating: 4.4,
     totalVotes: 244,
     address:
       "اراک,کوی علی ابن ابیطالب- بالاتر از چهار راه فوتبال- ساختمان پزشکان مادر_ طبقه دوم ـ واحد ۵",
@@ -308,20 +287,20 @@ export const doctors: DoctorModel[] = [
     badges: ["خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "9ce1d81f-a5c7-433f-8312-0f26d94cd1ad",
-    name: "محمدمهدی درخشان مهر",
+    id: "992509fd-4ce3-4ec7-8156-d4fda69cd060",
+    name: "سمیرا بهرامی",
     image:
-      "/getImage/p24/search-women/5ba7fa66fb0fc8ab18d19675b1c9347d.jpg?size=150",
+      "/getImage/p24/search-men/79362ecfd642dc13d728dc00585d3245.jpeg?size=150",
     isVerified: true,
     gender: "آقا",
     averageRating: 4.92,
-    totalVotes: 108,
+    totalVotes: 2000,
     address: "تهران,تهران، سعادت آباد، خیابان دوم شمالی",
-    firstAvailableAppointment: "کمتر از یک ساعت",
-    brief: "جراحی مغز واعصاب و ستون فقرات ( درد دست، سیاتیک، دیسک کمر و گردن)",
-    degree: "دانشجوی تخصص",
-    expertise: "مغز و اعصاب",
-    badges: ["منتخب پذیرش24", "کمترین معطلی"],
+    firstAvailableAppointment: "کمتر از ۲ ساعت",
+    brief: "ماما",
+    degree: "کارشناس",
+    expertise: "کارشناس مامایی",
+    badges: ["منتخب پذیرش24"],
   },
   {
     id: "56909296-d252-4452-9ed5-64cbf80c14e2",

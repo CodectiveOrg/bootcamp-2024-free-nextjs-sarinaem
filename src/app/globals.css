@@ -161,11 +161,9 @@ body {
     padding-inline: var(--full-width-padding-inline);
   }
 
-  .tagline {
+  .line {
     background-color: var(--color-gray-16);
 
-    padding-block: 1rem;
-
-    text-align: center;
+    padding-block-end: 0.01rem;
   }
 }
