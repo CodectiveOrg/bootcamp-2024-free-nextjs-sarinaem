@@ -1,5 +1,6 @@
 export type DoctorModel = {
   id?: string;
+  city?: string;
   name?: string;
   image?: string;
   gender?: "آقا" | "خانم";
