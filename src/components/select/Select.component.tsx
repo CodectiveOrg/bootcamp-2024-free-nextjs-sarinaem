@@ -1,10 +1,8 @@
-import {
-  ReactElement,
-  useCallback,
+import React, {
+  useState,
   useEffect,
   useRef,
-  useState,
-  MouseEvent,
+  useCallback,
   useMemo,
 } from "react";
 
@@ -14,157 +12,133 @@ import { SelectOptionType } from "@/types/select-option.type";
 
 import styles from "./select.module.css";
 
-type Props = {
-  floating?: boolean;
-  title?: string;
-  placeholder?: string;
-  options: SelectOptionType[];
-  selectedOption?: SelectOptionType;
-  onSelectedOptionChange?: (value: SelectOptionType) => void;
-  onIsOpenChange?: (value: boolean) => void;
+type SelectProps = {
+  isFloating?: boolean;
+  label?: string;
+  placeholderText?: string;
+  optionsList: SelectOptionType[];
+  currentOption?: SelectOptionType;
+  onOptionChange?: (value: SelectOptionType) => void;
+  onDropdownToggle?: (isOpen: boolean) => void;
 };
 
-export default function SelectComponent({
-  floating,
-  title,
-  placeholder,
-  options,
-  selectedOption,
-  onSelectedOptionChange,
-  onIsOpenChange,
-}: Props): ReactElement {
-  const [isOpen, setIsOpen] = useState(false);
-  const [highlightedIndex, setHighlightedIndex] = useState(0);
+const SelectDropdown: React.FC<SelectProps> = ({
+  isFloating,
+  label,
+  placeholderText,
+  optionsList,
+  currentOption,
+  onOptionChange,
+  onDropdownToggle,
+}) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  const maximumCharactersCount = useMemo(() => {
+  const maxLabelLength = useMemo(() => {
     return Math.max(
-      placeholder?.length ?? 0,
-      ...options.map((option) => option.label.length),
+      placeholderText?.length || 0,
+      ...optionsList.map((option) => option.label.length),
     );
-  }, [placeholder, options]);
+  }, [placeholderText, optionsList]);
 
-  const selectOption = useCallback(
-    (option: SelectOptionType): void => {
-      if (option !== selectedOption) {
-        onSelectedOptionChange?.(option);
+  const handleOptionSelect = useCallback(
+    (option: SelectOptionType) => {
+      if (option !== currentOption) {
+        onOptionChange?.(option);
       }
     },
-    [onSelectedOptionChange, selectedOption],
+    [onOptionChange, currentOption],
   );
 
-  const optionClickHandler = (
-    e: MouseEvent<HTMLLIElement>,
+  const handleOptionClick = (
+    event: React.MouseEvent<HTMLLIElement>,
     option: SelectOptionType,
-  ): void => {
-    e.stopPropagation();
-
-    selectOption(option);
-    setIsOpen(false);
+  ) => {
+    event.stopPropagation();
+    handleOptionSelect(option);
+    setDropdownOpen(false);
   };
 
   useEffect(() => {
-    if (isOpen) {
-      setHighlightedIndex(0);
+    if (dropdownOpen) {
+      setActiveIndex(0);
     }
-
-    onIsOpenChange?.(isOpen);
-  }, [isOpen, onIsOpenChange]);
+    onDropdownToggle?.(dropdownOpen);
+  }, [dropdownOpen, onDropdownToggle]);
 
   useEffect(() => {
-    const containerElement = containerRef.current;
+    const currentDropdown = dropdownRef.current;
+    if (!currentDropdown) return;
 
-    if (!containerElement) {
-      return;
-    }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.target !== currentDropdown) return;
 
-    const keydownHandler = (e: KeyboardEvent): void => {
-      if (e.target != containerRef.current) {
-        return;
-      }
-
-      switch (e.code) {
+      switch (event.code) {
         case "Enter":
-        case "Space": {
-          e.preventDefault();
-
-          if (isOpen) {
-            selectOption(options[highlightedIndex]);
+        case "Space":
+          event.preventDefault();
+          if (dropdownOpen) {
+            handleOptionSelect(optionsList[activeIndex]);
           }
-
-          setIsOpen((prev) => !prev);
-
+          setDropdownOpen((prev) => !prev);
           break;
-        }
         case "ArrowUp":
-        case "ArrowDown": {
-          e.preventDefault();
-
-          if (!isOpen) {
-            setIsOpen(true);
+        case "ArrowDown":
+          event.preventDefault();
+          if (!dropdownOpen) {
+            setDropdownOpen(true);
             break;
           }
-
-          const newValue = highlightedIndex + (e.code === "ArrowDown" ? 1 : -1);
-          if (newValue >= 0 && newValue < options.length) {
-            setHighlightedIndex(newValue);
+          const newIndex = activeIndex + (event.code === "ArrowDown" ? 1 : -1);
+          if (newIndex >= 0 && newIndex < optionsList.length) {
+            setActiveIndex(newIndex);
           }
-
           break;
-        }
-        case "Escape": {
-          e.preventDefault();
-
-          setIsOpen(false);
+        case "Escape":
+          event.preventDefault();
+          setDropdownOpen(false);
           break;
-        }
       }
     };
 
-    containerElement.addEventListener("keydown", keydownHandler);
-
+    currentDropdown.addEventListener("keydown", handleKeyDown);
     return () => {
-      containerElement.removeEventListener("keydown", keydownHandler);
+      currentDropdown.removeEventListener("keydown", handleKeyDown);
     };
-  }, [isOpen, highlightedIndex, options, selectOption]);
+  }, [dropdownOpen, activeIndex, optionsList, handleOptionSelect]);
 
   return (
     <div
-      ref={containerRef}
-      onBlur={() => setIsOpen(false)}
-      onClick={() => setIsOpen((old) => !old)}
+      ref={dropdownRef}
+      onBlur={() => setDropdownOpen(false)}
+      onClick={() => setDropdownOpen((prev) => !prev)}
       tabIndex={0}
       className={clsx(
         styles.container,
-        isOpen && styles.open,
-        floating && styles.floating,
+        dropdownOpen && styles.open,
+        isFloating && styles.floating,
       )}
     >
-      {title && <span className={styles.title}>{title}: </span>}
-
+      {label && <span className={styles.label}>{label}: </span>}
       <span
-        className={styles.value}
-        style={{
-          minInlineSize: `${maximumCharactersCount}ch`,
-        }}
+        className={styles.selectedValue}
+        style={{ minInlineSize: `${maxLabelLength}ch` }}
       >
-        {selectedOption?.label ?? placeholder ?? String.fromCharCode(160)}
+        {currentOption?.label || placeholderText || String.fromCharCode(160)}
       </span>
-
       <div className={styles.caret}></div>
-
-      <ul className={styles.options}>
-        {options.map((option, index) => (
+      <ul className={styles.optionsList}>
+        {optionsList.map((option, index) => (
           <li
             key={option.value}
             className={clsx(
-              styles.option,
-              option === selectedOption && styles.selected,
-              index === highlightedIndex && styles.highlighted,
+              styles.optionItem,
+              option === currentOption && styles.selected,
+              index === activeIndex && styles.highlighted,
             )}
-            onMouseEnter={() => setHighlightedIndex(index)}
-            onClick={(e) => optionClickHandler(e, option)}
+            onMouseEnter={() => setActiveIndex(index)}
+            onClick={(e) => handleOptionClick(e, option)}
           >
             {option.label}
           </li>
@@ -172,4 +146,6 @@ export default function SelectComponent({
       </ul>
     </div>
   );
-}
+};
+
+export default SelectDropdown;
