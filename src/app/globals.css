@@ -54,13 +54,13 @@
     --color-gray-70: hsl(0deg 0% 20%);
     --color-gray-40: hsl(0deg 0% 30%);
     --color-gray-30: hsl(0deg 0% 40%);
-    --color-gray-20: hsl(0deg 0% 70%);
+    --color-gray-20: hsl(0, 0%, 100%);
     --color-gray-16: hsl(0deg 0% 80%);
     --color-gray-12: hsl(0deg 0% 90%);
     --color-gray-10: hsl(0deg 0% 98%);
 
-    --color-default-background: var(--color-gray-98);
-    --color-default-foreground: var(--color-gray-10);
+    --color-default-background: var(--color-gray-10);
+    --color-default-foreground: var(--color-gray-98);
 
     --color-primary: hsl(248, 100%, 66%);
     --color-primary-fade: hsl(0, 0%, 73%);

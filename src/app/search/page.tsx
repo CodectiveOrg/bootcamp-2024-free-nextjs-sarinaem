@@ -9,6 +9,14 @@ import { FilterType } from "@/types/filter.type";
 import FilterProvider from "@/app/search/provider/filter/filter.provider";
 import DoctorsProvider from "./provider/doctor/doctor.provider";
 
+import FiltersSummaryComponent from "./components/show-filter/filters-summary.component";
+import AppointmentFilterComponent from "./components/show-filter/filters-summary.component";
+import ExpertiseFilterComponent from "./components/expertise-filter/expertise-filter.component";
+import GenderFilterComponent from "./components/gender-filter/gender-filter.component";
+import DegreeFilterComponent from "./components/degree-filter/degree-filter.component";
+import StatsComponent from "./components/stats/stats.component";
+import ResultsComponent from "./components/results/results.component";
+
 import styles from "./page.module.css";
 
 type SearchParams = { [key: string]: string | string[] | undefined };
@@ -29,11 +37,21 @@ export default async function Page({
           <div className={styles.search}>
             <GlobalSearchBoxComponent />
           </div>
-          <div className={styles.filters}></div>
-          <div className={styles.toolbar}>
-            <div className={styles.stats}></div>
+          <div className={styles.filters}>
+            <FiltersSummaryComponent />
+            <ExpertiseFilterComponent />
+            <GenderFilterComponent />
+            <DegreeFilterComponent />
           </div>
-          <div className={styles.results}></div>
+          <div className={styles.toolbar}>
+            <AppointmentFilterComponent />
+            <div className={styles.stats}>
+              <StatsComponent />
+            </div>
+          </div>
+          <div className={styles.results}>
+            <ResultsComponent />
+          </div>
         </div>
       </DoctorsProvider>
     </FilterProvider>

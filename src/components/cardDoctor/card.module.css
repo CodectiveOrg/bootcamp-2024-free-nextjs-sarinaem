@@ -1,0 +1,8 @@
+.cardDoctor {
+  background-color: var(--color-gray-40);
+  box-shadow: var(--shadow-400);
+
+  padding: 1rem;
+
+  border-radius: var(--border-radius);
+}

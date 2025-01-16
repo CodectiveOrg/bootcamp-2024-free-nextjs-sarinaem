@@ -31,7 +31,7 @@
   }
 
   .options {
-    background-color: var(--color-surface-700);
+    background-color: var(--color-default-background);
     box-shadow: var(--shadow-400);
 
     position: absolute;
@@ -53,12 +53,12 @@
       cursor: pointer;
 
       &.highlighted {
-        background-color: var(--color-surface-300);
+        background-color: var(--color-gray-90);
       }
 
       &.selected {
         background-color: var(--color-primary);
-        color: var(--color-primary-opposite);
+        color: var(--color-gray-70);
       }
     }
   }
@@ -79,7 +79,7 @@
   }
 
   &.floating {
-    background-color: var(--color-surface-700);
+    background-color: var(---color-default-background);
     box-shadow: var(--shadow-400);
 
     &:not(&:focus, &.open) {

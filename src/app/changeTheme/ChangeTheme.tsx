@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 
 import MingcuteMoonFill from "@/assets/dark&light-mode/MingcuteMoonFill";
@@ -9,19 +11,31 @@ const ChangeTheme = () => {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.className = savedTheme;
+      document.body.className = savedTheme;
+    } else {
+      document.documentElement.className = theme;
+      document.body.className = theme;
+    }
+  }, []);
+
+  useEffect(() => {
     document.documentElement.className = theme;
     localStorage.setItem("theme", theme);
+    document.body.className = theme;
   }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
-    document.body.className = newTheme;
   };
 
   return (
     <button className={styles.changeBackground} onClick={toggleTheme}>
-      {theme === "light" ? <MingcuteSunLine /> : <MingcuteMoonFill />}
+      {theme === "light" ? <MingcuteMoonFill /> : <MingcuteSunLine />}
     </button>
   );
 };
