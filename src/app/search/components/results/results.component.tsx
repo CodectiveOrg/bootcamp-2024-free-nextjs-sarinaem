@@ -23,7 +23,7 @@ export default function ResultsComponent(): ReactElement {
             <div className={styles.image}>
               <img
                 src={`https://cdn.paziresh24.com${doctor.image}`}
-                alt={"پروفایل دکتر"}
+                alt={"عکس دکتر"}
                 width={150}
                 height={150}
               />
