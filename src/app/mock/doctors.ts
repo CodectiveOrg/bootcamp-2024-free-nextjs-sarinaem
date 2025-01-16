@@ -219,23 +219,6 @@ export const doctors: DoctorModel[] = [
     badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
   },
   {
-    id: "97421b53-3781-490a-b1eb-1f71c9cda63c",
-    name: "فرشته سبزواری",
-    image:
-      "/getImage/p24/search-men/b93bddca7a8589c39013da8f1d67113e.jpg?size=150",
-    isVerified: true,
-    gender: "خانم",
-    averageRating: 5,
-    totalVotes: 25,
-    address:
-      "اسلامشهر,اسلامشهر، بسیج، نبش خیابان کاشانی، بالای فروشگاه آپاچی پلاک 852، طبقه اول",
-    firstAvailableAppointment: "کمتر از ۱ ساعت",
-    brief: "کارشناسی‌ارشد گفتاردرمانی",
-    degree: "کارشناس ارشد",
-    expertise: "توانبخشی",
-    badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
-  },
-  {
     id: "a70497d6-c6aa-4144-a863-2962ab2b7f44",
     name: "محمد اخوان بازارده",
     image:

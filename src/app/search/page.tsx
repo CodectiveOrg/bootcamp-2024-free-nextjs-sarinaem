@@ -36,19 +36,21 @@ export default async function Page({
           <div className={styles.search}>
             <GlobalSearchBoxComponent />
           </div>
-          <div className={styles.filters}>
-            <ExpertiseFilterComponent />
-            <GenderFilterComponent />
-            <DegreeFilterComponent />
-          </div>
-          <div className={styles.toolbar}>
-            <AppointmentFilterComponent />
-            <div className={styles.stats}>
-              <StatsComponent />
+          <div className={styles.detail}>
+            <div className={styles.filters}>
+              <ExpertiseFilterComponent />
+              <GenderFilterComponent />
+              <DegreeFilterComponent />
             </div>
-          </div>
-          <div className={styles.results}>
-            <ResultsComponent />
+            <div className={styles.toolbar}>
+              <AppointmentFilterComponent />
+              <div className={styles.stats}>
+                <StatsComponent />
+              </div>
+            </div>
+            <div className={styles.results}>
+              <ResultsComponent />
+            </div>
           </div>
         </div>
       </DoctorsProvider>

@@ -8,7 +8,7 @@ import MingcuteSunLine from "@/assets/dark&light-mode/MingcuteSunLine";
 import styles from "./ChangeTheme.module.css";
 
 const ChangeTheme = () => {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");

@@ -18,6 +18,7 @@ export default function DegreeFilterComponent(): ReactElement {
       title="تحصیلات"
       name="degree"
       options={[
+        { value: "فلوشیپ", label: "فلوشیپ" },
         { value: "فوق تخصص", label: "فوق تخصص" },
         { value: "دکترای تخصصی", label: "دکترای تخصصی" },
         { value: "متخصص", label: "متخصص" },
