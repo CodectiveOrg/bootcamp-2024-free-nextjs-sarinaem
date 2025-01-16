@@ -137,22 +137,6 @@ export const doctors: DoctorModel[] = [
     badges: ["کمترین معطلی"],
   },
   {
-    id: "baeeab42-e79e-4848-ae78-1b18e8a195c4",
-    name: "عرفان اشجعي",
-    image:
-      "/getImage/p24/search-men/8c981c886725e524c0e0f100ff25f22c.jpg?size=150",
-    isVerified: true,
-    gender: "آقا",
-    averageRating: 4.83,
-    totalVotes: 699,
-    address: "تهران,تهران، ولیعصر، حق شناس، پلاک پنج، طبقه همکف",
-    firstAvailableAppointment: "کمتر از ۱ ساعت",
-    brief: "پزشک عمومی فارغ‌التحصیل تهران",
-    degree: "دکترای",
-    expertise: "پزشک عمومی",
-    badges: ["منتخب پذیرش24", "خوش برخورد"],
-  },
-  {
     id: "d476e2fd-3c6b-446a-a06b-e0c5c2edb062",
     name: "مهسا بالاجازاده",
     image:
