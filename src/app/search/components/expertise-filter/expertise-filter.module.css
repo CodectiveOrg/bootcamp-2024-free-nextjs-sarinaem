@@ -1,9 +1,15 @@
 .expertise-filter {
+  background-color: var(--color-gray-10);
+
   overflow: auto;
 
   max-block-size: 20rem;
 
   scrollbar-width: thin;
+
+  &:hover {
+    background-color: var(--color-gray-20);
+  }
 
   > li {
     button {
