@@ -15,7 +15,7 @@ export default function GenderFilterComponent(): ReactElement {
 
   return (
     <RadioFilterComponent
-      title="جنسیت پزشک"
+      title="جنسیت"
       name="gender"
       options={[
         { value: "آقا", label: "آقا" },

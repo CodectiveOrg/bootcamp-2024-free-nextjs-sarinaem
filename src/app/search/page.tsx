@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
 
-import GlobalSearchBoxComponent from "@/components/global-search-box/GlobalSearchBox.component";
-
 import { doctors } from "@/app/mock/doctors";
 
 import { FilterType } from "@/types/filter.type";
+
+import GlobalSearchBoxComponent from "@/components/global-search-box/GlobalSearchBox.component";
 
 import FilterProvider from "@/app/search/provider/filter/filter.provider";
 import DoctorsProvider from "./provider/doctor/doctor.provider";

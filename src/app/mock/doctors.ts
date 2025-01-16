@@ -15,7 +15,7 @@ export const doctors: DoctorModel[] = [
     brief: "عفونت مغزی،عفونت گوش و حلق و بینی،سلولیت",
     degree: "متخصص",
     expertise: "عفونی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "b6ffbd14-4a54-48c9-8a74-0e9b34fc6ed1",
@@ -33,7 +33,7 @@ export const doctors: DoctorModel[] = [
       "مشاوره بکارت و صدور گواهی ازدواج_آی یو دی گذاری_مشاوره و درمان زگیل تناسلی، تبخال تناسلی،عفونتهای تناسلی-ادراری و اختلالات قاعدگی_تست پاپ اسمیر و Hpv_مشاوره تعیین جنسیت_مشاوره جنسی ازدواج و اختلالات جنسی",
     degree: "کارشناس ارشد",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "61ea57d2-4aef-4e02-9a35-90f7d4c5a10e",
@@ -67,7 +67,7 @@ export const doctors: DoctorModel[] = [
       "بهداشت باروری، بهداشت جنسی، روابط زناشویی، واژینسموس، تنظیم خانواده، درمان کاهش و افزایش میل جنسی، اختلالات جنسی زوجین، مشاوره یائسگی، اختلالات قاعدگی",
     degree: "کاردان",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "1a8daf37-714a-45ac-91e6-e0f6992d88a1",
@@ -101,7 +101,7 @@ export const doctors: DoctorModel[] = [
     brief: "کارشناس علوم تغذیه",
     degree: "کارشناس",
     expertise: "تغذیه",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "99ee46ce-c3af-411e-b921-86c4e86c2282",
@@ -117,7 +117,7 @@ export const doctors: DoctorModel[] = [
     brief: "زگیل تناسلی/عفونت/معاینه بکارت/اوزون تراپی/مشاوره جنسی/گارداسیل",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["منتخب پذیرش24", "کمترین معطلی"],
+    badges: ["منتخب پذیرش24"],
   },
   {
     id: "2b52cf72-a270-11ea-893e-005056b09c11",
@@ -134,7 +134,7 @@ export const doctors: DoctorModel[] = [
     brief: "دکترای تخصصی (Ph.D) طب سنتی ایرانی",
     degree: "دکترای تخصصی",
     expertise: "طب سنتی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "d476e2fd-3c6b-446a-a06b-e0c5c2edb062",
@@ -150,7 +150,7 @@ export const doctors: DoctorModel[] = [
     brief: "درمان تخصصی تنبلی تخمدان_عفونت_اختلالات جنسی بانوان_ناباروری",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["منتخب پذیرش24", "خوش برخورد"],
+    badges: ["خوش برخورد"],
   },
   {
     id: "da8a5af6-3e6e-4a65-9327-4d0bd7469d30",
@@ -167,7 +167,7 @@ export const doctors: DoctorModel[] = [
     brief: "مامایی ،زنان،زایمان",
     degree: "کارشناس ارشد",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "98577481-84be-4e20-8a8a-3c4abaab76c5",
@@ -183,7 +183,7 @@ export const doctors: DoctorModel[] = [
     brief: "متخصص جراحی دهان و فک و صورت، دکترای حرفه ای دندانپزشکی",
     degree: "دانشجوی تخصص",
     expertise: "جراحی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "8cec9d31-a200-11ea-befd-005056b09c11",
@@ -200,7 +200,7 @@ export const doctors: DoctorModel[] = [
     brief: "عفونت واژن،بکارت،زگیل تناسلی،تبخال تناسلی،پریودنامنظم،زنان،مامایی",
     degree: "کارشناس ارشد",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
+    badges: [],
   },
   {
     id: "a70497d6-c6aa-4144-a863-2962ab2b7f44",
@@ -217,7 +217,7 @@ export const doctors: DoctorModel[] = [
     brief: "آسیب شناس گفتار و زبان",
     degree: "کارشناس",
     expertise: "توانبخشی",
-    badges: ["کمترین معطلی"],
+    badges: [],
   },
   {
     id: "2b8367b3-015d-44b0-8c11-8113600955ec",
@@ -233,7 +233,7 @@ export const doctors: DoctorModel[] = [
     brief: "زیبایی زنان گواهی  بکارت و زگیل و عفونت‌ها",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["منتخب پذیرش24", "کمترین معطلی"],
+    badges: [],
   },
   {
     id: "974248f5-cb6d-4193-aaed-58f56d6b21df",
@@ -250,7 +250,7 @@ export const doctors: DoctorModel[] = [
     brief: "کارشناسی مامایی.مربی بین المللی یوگای بارداری و یوگای پس از زایمان",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["خوش برخورد", "کمترین معطلی"],
+    badges: [],
   },
   {
     id: "992509fd-4ce3-4ec7-8156-d4fda69cd060",
@@ -266,7 +266,7 @@ export const doctors: DoctorModel[] = [
     brief: "ماما",
     degree: "کارشناس",
     expertise: "کارشناس مامایی",
-    badges: ["منتخب پذیرش24"],
+    badges: [],
   },
   {
     id: "56909296-d252-4452-9ed5-64cbf80c14e2",
@@ -282,7 +282,7 @@ export const doctors: DoctorModel[] = [
     brief: "کارشناسی مامایی",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["منتخب پذیرش24", "کمترین معطلی"],
+    badges: [],
   },
   {
     id: "3f9b752a-2af2-4c66-be4e-4e1cf597b491",
