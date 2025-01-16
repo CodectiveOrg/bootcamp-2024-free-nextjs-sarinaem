@@ -4,7 +4,6 @@ import { ReactElement, useContext } from "react";
 
 import Link from "next/link";
 
-import Image from "next/image";
 import MingcuteStarFill from "@/icons/MingcuteStarFill";
 import MingcuteLocationLine from "@/icons/MingcuteLocationLine";
 
@@ -22,7 +21,7 @@ export default function ResultsComponent(): ReactElement {
         <li key={doctor.id}>
           <div className={styles.header}>
             <div className={styles.image}>
-              <Image
+              <img
                 src={`https://cdn.paziresh24.com${doctor.image}`}
                 alt={"پروفایل دکتر"}
                 width={150}

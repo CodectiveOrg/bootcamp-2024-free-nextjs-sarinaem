@@ -21,6 +21,8 @@
     --color-primary-opposite: var(--color-gray-10);
     --color-secendry: hsl(256, 98%, 37%);
 
+    --color-background: hsl(0, 0%, 44%);
+
     --color-denger: hsl(0, 100%, 50%);
     --color-denger-light: hsla(0, 100%, 56%, 0.809);
     --color-denger-dark: hsla(0, 100%, 50%, 0.625);
@@ -68,6 +70,8 @@
     --color-primary-darker: hsl(0, 0%, 100%);
     --color-primary-opposite: var(--color-gray-98);
     --color-secendry: hsl(256, 98%, 37%);
+
+    --color-background: hsl(0, 0%, 100%);
 
     --color-denger: hsl(0, 100%, 50%);
     --color-denger-light: hsla(0, 100%, 56%, 0.809);
