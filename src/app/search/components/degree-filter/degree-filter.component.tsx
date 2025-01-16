@@ -15,10 +15,9 @@ export default function DegreeFilterComponent(): ReactElement {
 
   return (
     <RadioFilterComponent
-      title="درجه علمی"
+      title="تحصیلات"
       name="degree"
       options={[
-        { value: "فلوشیپ", label: "فلوشیپ" },
         { value: "فوق تخصص", label: "فوق تخصص" },
         { value: "دکترای تخصصی", label: "دکترای تخصصی" },
         { value: "متخصص", label: "متخصص" },

@@ -9,7 +9,6 @@ import { FilterType } from "@/types/filter.type";
 import FilterProvider from "@/app/search/provider/filter/filter.provider";
 import DoctorsProvider from "./provider/doctor/doctor.provider";
 
-import FiltersSummaryComponent from "./components/show-filter/filters-summary.component";
 import AppointmentFilterComponent from "./components/show-filter/filters-summary.component";
 import ExpertiseFilterComponent from "./components/expertise-filter/expertise-filter.component";
 import GenderFilterComponent from "./components/gender-filter/gender-filter.component";
@@ -38,7 +37,6 @@ export default async function Page({
             <GlobalSearchBoxComponent />
           </div>
           <div className={styles.filters}>
-            <FiltersSummaryComponent />
             <ExpertiseFilterComponent />
             <GenderFilterComponent />
             <DegreeFilterComponent />

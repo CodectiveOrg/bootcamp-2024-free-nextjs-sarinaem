@@ -28,7 +28,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 244,
     address:
       "اراک,کوی علی ابن ابیطالب- بالاتر از چهار راه فوتبال- ساختمان پزشکان مادر_ طبقه دوم ـ واحد ۵",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief:
       "مشاوره بکارت و صدور گواهی ازدواج_آی یو دی گذاری_مشاوره و درمان زگیل تناسلی، تبخال تناسلی،عفونتهای تناسلی-ادراری و اختلالات قاعدگی_تست پاپ اسمیر و Hpv_مشاوره تعیین جنسیت_مشاوره جنسی ازدواج و اختلالات جنسی",
     degree: "کارشناس ارشد",
@@ -45,7 +45,7 @@ export const doctors: DoctorModel[] = [
     averageRating: 4.7,
     totalVotes: 147,
     address: "یزد,یزد بلوار جمهوری بیمارستان افشار -کلینیک",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "فلوشیپ فوق تخصصی آنژیوگرافی.آنژیوپلاستی عروق .استراکچرال و واریس",
     degree: "فلوشیپ",
     expertise: "قلب و عروق",
@@ -62,7 +62,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 318,
     address:
       "قم,۲۰ متری امام حسین، نبش خیابان دانیال، بعد از کوچه ۲۹ دانیال، پلاک ۵۶۵، روبروی قنادی سیب، از سمت دیگر: خیابان صدوق، ۵۵ متری فردوسی، چهار راه قلم ، سمت چپ به سمت خیابان دانیال، روبروی قنادی سیب، ساعت تماس ۱۶.۳۰ الی ۱۹.۳۰",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief:
       "بهداشت باروری، بهداشت جنسی، روابط زناشویی، واژینسموس، تنظیم خانواده، درمان کاهش و افزایش میل جنسی، اختلالات جنسی زوجین، مشاوره یائسگی، اختلالات قاعدگی",
     degree: "کاردان",
@@ -80,7 +80,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 178,
     address:
       "علی آباد کتول,علی آباد کتول، بلوار امام رضا، جنگلده، مجتمع اسپانتا، بلوک یک، طبقه یک",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "متخصص زنان زایمان نازایی زیبایی",
     degree: "متخصص",
     expertise: "زنان، زایمان و نازایی",
@@ -97,8 +97,8 @@ export const doctors: DoctorModel[] = [
     totalVotes: 134,
     address:
       "اهواز,مطب اول: کیانپارس، نبش خیابان 13 غربی، درمانگاه شبانه روزی فرهنگیان: مطب دوم : پادادشهر. خیابان 10 پاداد. درمانگاه شبانه روزی اَمان شماره تماس مطب: 09106433945_06133346824",
-    firstAvailableAppointment: "کمتر از یک ساعت",
-    brief: "کارشناس علوم تغذیه nutrition (لاغری،بارداری،اطفال،دیابت،قلبی و..)",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
+    brief: "کارشناس علوم تغذیه",
     degree: "کارشناس",
     expertise: "تغذیه",
     badges: ["کمترین معطلی"],
@@ -113,7 +113,7 @@ export const doctors: DoctorModel[] = [
     averageRating: 5,
     totalVotes: 14,
     address: "آمل,خیابان انقلاب،پاساژ پردیس،طبقه دوم",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "زگیل تناسلی/عفونت/معاینه بکارت/اوزون تراپی/مشاوره جنسی/گارداسیل",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
@@ -130,7 +130,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 441,
     address:
       "تهران,تهران، بزرگراه آبشناسان،سردار شمال، پنج تن، قدس، نبش یکم مرکزی",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "دکترای تخصصی (Ph.D) طب سنتی ایرانی",
     degree: "دکترای تخصصی",
     expertise: "طب سنتی",
@@ -146,11 +146,11 @@ export const doctors: DoctorModel[] = [
     averageRating: 4.83,
     totalVotes: 699,
     address: "تهران,تهران، ولیعصر، حق شناس، پلاک پنج، طبقه همکف",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "پزشک عمومی فارغ‌التحصیل تهران",
     degree: "دکترای",
     expertise: "پزشک عمومی",
-    badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
+    badges: ["منتخب پذیرش24", "خوش برخورد"],
   },
   {
     id: "d476e2fd-3c6b-446a-a06b-e0c5c2edb062",
@@ -166,7 +166,7 @@ export const doctors: DoctorModel[] = [
     brief: "درمان تخصصی تنبلی تخمدان_عفونت_اختلالات جنسی بانوان_ناباروری",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
-    badges: ["منتخب پذیرش24", "خوش برخورد", "کمترین معطلی"],
+    badges: ["منتخب پذیرش24", "خوش برخورد"],
   },
   {
     id: "da8a5af6-3e6e-4a65-9327-4d0bd7469d30",
@@ -179,7 +179,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 64,
     address:
       "بجنورد,بجنورد،خیابان دوچنار کوچه شهید محمد زاده، تقاطع آزمایشگاه طالقانی داخل کوچه سمت چپ ساختمان اداری امید طبقه دوم مرکزمامایی سپینود",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "مامایی ،زنان،زایمان",
     degree: "کارشناس ارشد",
     expertise: "زنان، زایمان و نازایی",
@@ -195,7 +195,7 @@ export const doctors: DoctorModel[] = [
     averageRating: 4.41,
     totalVotes: 92,
     address: "تبریز,والمان، روبروی هتل فرید",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۳۰ دقیقه",
     brief: "متخصص جراحی دهان و فک و صورت، دکترای حرفه ای دندانپزشکی",
     degree: "دانشجوی تخصص",
     expertise: "جراحی",
@@ -229,7 +229,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 25,
     address:
       "اسلامشهر,اسلامشهر، بسیج، نبش خیابان کاشانی، بالای فروشگاه آپاچی پلاک 852، طبقه اول",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "کارشناسی‌ارشد گفتاردرمانی",
     degree: "کارشناس ارشد",
     expertise: "توانبخشی",
@@ -246,7 +246,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 32,
     address:
       "رشت,رشت، فاز2 معلم، میدان سرگل، بلوار شمسی پور،  میدان هاشمی ساختمان آنتیک 1 طبقه دوم واحد2",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "آسیب شناس گفتار و زبان",
     degree: "کارشناس",
     expertise: "توانبخشی",
@@ -262,7 +262,7 @@ export const doctors: DoctorModel[] = [
     averageRating: 4.79,
     totalVotes: 18,
     address: "خرم آباد,خرم آباد، بلوار شهید شفیع پور، بابک 2 غربی",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "وزیبایی زنان گواهی  بکارت و زگیل و عفونت ها و",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
@@ -279,7 +279,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 30,
     address:
       "بندرعباس,استان هرمزگان- بندرعباس_خیابان سیدجمال_جلوتر از سه راه سازمان_کوچه ی مهیار ۱۸_ساختمان اوپال_واحد ۶_طبقه ی دوم",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief:
       "کارشناسی مامایی.مربی بین المللی یوگای بارداری و یوگای پس از زایمان.مدرک زایمان فیزیولوژیک",
     degree: "کارشناس",
@@ -312,7 +312,7 @@ export const doctors: DoctorModel[] = [
     averageRating: 4.92,
     totalVotes: 13,
     address: "شهرکرد,https://balad.ir/p/6bOqWnvsvvLb9t",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "کارشناسی مامایی",
     degree: "کارشناس",
     expertise: "زنان، زایمان و نازایی",
@@ -329,7 +329,7 @@ export const doctors: DoctorModel[] = [
     totalVotes: 200,
     address:
       "تهران,فلکه دوم تهرانپارس ابتدای خیابان جشنواره ساختمان پزشکان ابن سینا طبقه اول واحد 6",
-    firstAvailableAppointment: "کمتر از یک ساعت",
+    firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "تخصص زنان و زایمان نازایی. کولپوسکوپی   تشخیص درمان زگیل تناسلی",
     degree: "متخصص",
     expertise: "زنان، زایمان و نازایی",

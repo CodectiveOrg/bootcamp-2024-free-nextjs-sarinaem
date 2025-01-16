@@ -22,6 +22,7 @@
     --color-secendry: hsl(256, 98%, 37%);
 
     --color-background: hsl(0, 0%, 44%);
+    --color-text: hsl(0, 0%, 0%);
 
     --color-denger: hsl(0, 100%, 50%);
     --color-denger-light: hsla(0, 100%, 56%, 0.809);
@@ -72,6 +73,7 @@
     --color-secendry: hsl(256, 98%, 37%);
 
     --color-background: hsl(0, 0%, 100%);
+    --color-text: hsl(0, 0%, 0%);
 
     --color-denger: hsl(0, 100%, 50%);
     --color-denger-light: hsla(0, 100%, 56%, 0.809);

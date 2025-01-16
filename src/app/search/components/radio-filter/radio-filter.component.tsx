@@ -31,16 +31,16 @@ export default function RadioFilterComponent({
     <CardComponent>
       <div className={styles["radio-filter"]}>
         <div className={styles.title}>{title}</div>
-        {options.map((x) => (
-          <label key={x.value}>
+        {options.map((select) => (
+          <label key={select.value}>
             <input
               type="radio"
               name={name}
-              value={x.value}
-              checked={x.value === value}
+              value={select.value}
+              checked={select.value === value}
               onChange={inputChangeHandler}
             />
-            {x.label}
+            {select.label}
           </label>
         ))}
       </div>

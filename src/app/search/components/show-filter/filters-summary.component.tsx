@@ -15,11 +15,7 @@ export default function FiltersSummaryComponent(): ReactElement | null {
 
   const isEmpty = useMemo(() => {
     return (
-      !filters.query &&
-      !filters.expertise &&
-      !filters.gender &&
-      !filters.degree &&
-      !filters.badges
+      !filters.query && !filters.expertise && !filters.gender && !filters.degree
     );
   }, [filters]);
 
@@ -38,7 +34,7 @@ export default function FiltersSummaryComponent(): ReactElement | null {
   return (
     <CardComponent>
       <div className={styles["filters-summary"]}>
-        <div className={styles.title}>نمایش لیست فیلترها</div>
+        <div className={styles.title}>نمایش فیلترها</div>
 
         <button type="button" onClick={removeAllButtonClickHandler}>
           حذف همه
@@ -61,11 +57,6 @@ export default function FiltersSummaryComponent(): ReactElement | null {
           {filters.degree && (
             <li onClick={() => filterClickHandler("degree")}>
               {filters.degree}
-            </li>
-          )}
-          {filters.badges && (
-            <li onClick={() => filterClickHandler("badges")}>
-              {filters.badges}
             </li>
           )}
         </ul>

@@ -3,7 +3,7 @@
   gap: 1rem;
 
   > li {
-    background-color: var(--color-surface-700);
+    background-color: var(--color-gray-10);
     box-shadow: var(--shadow-400);
 
     display: grid;
@@ -21,7 +21,7 @@
       display: grid;
       grid-template-areas: "image name badges" "image brief brief";
       grid-template-columns: auto 1fr auto;
-      column-gap: 0.5rem;
+      column-gap: 4.5rem;
 
       .image {
         grid-area: image;
@@ -30,12 +30,12 @@
         block-size: 0;
 
         img {
-          block-size: 100%;
+          block-size: 120%;
           inline-size: auto;
           aspect-ratio: 1 / 1;
           object-fit: cover;
 
-          border: 2px solid var(--color-primary);
+          border: 2px solid var(--color-gray-70);
           border-radius: 999rem;
         }
       }
@@ -71,7 +71,7 @@
         font-size: var(--fz-200);
 
         .badge {
-          background-color: var(--color-surface-400);
+          background-color: var(--color-primary);
 
           padding: 0.25rem 0.75rem;
 
@@ -136,7 +136,7 @@
 
       a {
         background-color: var(--color-primary);
-        color: var(--color-primary-opposite);
+        color: var(--color-text);
 
         padding: 0.5rem 2rem;
 

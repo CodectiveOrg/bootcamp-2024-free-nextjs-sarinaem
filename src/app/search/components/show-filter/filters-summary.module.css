@@ -45,7 +45,7 @@
 
       &:hover {
         &::after {
-          content: "x";
+          content: "❌";
 
           background-color: var(--color-denger);
           color: var(--color-gray-10);
