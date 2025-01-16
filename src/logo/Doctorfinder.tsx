@@ -1,6 +1,6 @@
 import React, { SVGProps } from "react";
 
-export function DoctorFinder(props: SVGProps<SVGSVGElement>) {
+function DoctorFinder(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
