@@ -15,6 +15,7 @@ import GenderFilterComponent from "./components/gender-filter/gender-filter.comp
 import DegreeFilterComponent from "./components/degree-filter/degree-filter.component";
 import StatsComponent from "./components/stats/stats.component";
 import ResultsComponent from "./components/results/results.component";
+import CityFilterComponent from "./components/city-filter/city-filter";
 
 import styles from "./page.module.css";
 
@@ -40,6 +41,7 @@ export default async function Page({
             <div className={styles.filters}>
               <ExpertiseFilterComponent />
               <GenderFilterComponent />
+              <CityFilterComponent />
               <DegreeFilterComponent />
             </div>
             <div className={styles.toolbar}>

@@ -8,6 +8,7 @@ export const doctors: DoctorModel[] = [
       "/getImage/p24/search-men/9b45c32fe70f1321b4b349bc1a5aff9c.jpeg?size=150",
     isVerified: true,
     gender: "آقا",
+    city: "تهران",
     averageRating: 4.2,
     totalVotes: 1973,
     address: "تهران، بلوار گلشهر ، پلاک 7، طبقه سوم واحد 7",
@@ -26,6 +27,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.4,
     totalVotes: 244,
+    city: "اراک",
     address:
       "اراک,کوی علی ابن ابیطالب- بالاتر از چهار راه فوتبال- ساختمان پزشکان مادر_ طبقه دوم ـ واحد ۵",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -44,6 +46,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
     averageRating: 4.7,
     totalVotes: 147,
+    city: "یزد",
     address: "یزد,یزد بلوار جمهوری بیمارستان افشار -کلینیک",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "فلوشیپ فوق تخصصی آنژیوگرافی.آنژیوپلاستی عروق .استراکچرال و واریس",
@@ -60,6 +63,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.56,
     totalVotes: 318,
+    city: "قم",
     address:
       "قم,۲۰ متری امام حسین، نبش خیابان دانیال، بعد از کوچه ۲۹ دانیال، پلاک ۵۶۵، روبروی قنادی سیب، از سمت دیگر: خیابان صدوق، ۵۵ متری فردوسی، چهار راه قلم ، سمت چپ به سمت خیابان دانیال، روبروی قنادی سیب، ساعت تماس ۱۶.۳۰ الی ۱۹.۳۰",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -78,6 +82,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.77,
     totalVotes: 178,
+    city: "علی آباد کتول",
     address:
       "علی آباد کتول,علی آباد کتول، بلوار امام رضا، جنگلده، مجتمع اسپانتا، بلوک یک، طبقه یک",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -95,6 +100,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
     averageRating: 4.47,
     totalVotes: 134,
+    city: "اهواز",
     address:
       "اهواز,مطب اول: کیانپارس، نبش خیابان 13 غربی، درمانگاه شبانه روزی فرهنگیان: مطب دوم : پادادشهر. خیابان 10 پاداد. درمانگاه شبانه روزی اَمان شماره تماس مطب: 09106433945_06133346824",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -112,6 +118,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 5,
     totalVotes: 14,
+    city: "آمل",
     address: "آمل,خیابان انقلاب،پاساژ پردیس،طبقه دوم",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "زگیل تناسلی/عفونت/معاینه بکارت/اوزون تراپی/مشاوره جنسی/گارداسیل",
@@ -128,6 +135,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
     averageRating: 4.38,
     totalVotes: 441,
+    city: "تهران",
     address:
       "تهران,تهران، بزرگراه آبشناسان،سردار شمال، پنج تن، قدس، نبش یکم مرکزی",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -145,6 +153,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 5,
     totalVotes: 24,
+    city: "ورامین",
     address: "ورامین,ورامین، بلوار باهنر، بین هداوند خانی و گل آفتاب",
     firstAvailableAppointment: "",
     brief: "درمان تخصصی تنبلی تخمدان_عفونت_اختلالات جنسی بانوان_ناباروری",
@@ -161,6 +170,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.67,
     totalVotes: 64,
+    city: "بجنورد",
     address:
       "بجنورد,بجنورد،خیابان دوچنار کوچه شهید محمد زاده، تقاطع آزمایشگاه طالقانی داخل کوچه سمت چپ ساختمان اداری امید طبقه دوم مرکزمامایی سپینود",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -178,6 +188,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
     averageRating: 4.41,
     totalVotes: 92,
+    city: "تبریز",
     address: "تبریز,والمان، روبروی هتل فرید",
     firstAvailableAppointment: "کمتر از ۳۰ دقیقه",
     brief: "متخصص جراحی دهان و فک و صورت، دکترای حرفه ای دندانپزشکی",
@@ -194,6 +205,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.82,
     totalVotes: 1222,
+    city: "زنجان",
     address:
       "زنجان,دروازه ارک، روبروی بیمارستان بهشتی، ساختمان پزشکان ارک، طبقه اول، واحد اول",
     firstAvailableAppointment: "",
@@ -211,6 +223,7 @@ export const doctors: DoctorModel[] = [
     gender: "آقا",
     averageRating: 4.73,
     totalVotes: 32,
+    city: "رشت",
     address:
       "رشت,رشت، فاز2 معلم، میدان سرگل، بلوار شمسی پور،  میدان هاشمی ساختمان آنتیک 1 طبقه دوم واحد2",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -228,6 +241,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.79,
     totalVotes: 18,
+    city: "خرم آباد",
     address: "خرم آباد,خرم آباد، بلوار شهید شفیع پور، بابک 2 غربی",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "زیبایی زنان گواهی  بکارت و زگیل و عفونت‌ها",
@@ -244,6 +258,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.88,
     totalVotes: 30,
+    city: "بندرعباس",
     address:
       "بندرعباس, خیابان سیدجمال_جلوتر از سه‌راه سازمان_کوچه ی مهیار ۱۸_ساختمان اوپال_واحد ۶",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
@@ -261,6 +276,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.92,
     totalVotes: 2000,
+    city: "تهران",
     address: "تهران,تهران، سعادت آباد، خیابان دوم شمالی",
     firstAvailableAppointment: "کمتر از ۲ ساعت",
     brief: "ماما",
@@ -277,6 +293,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.92,
     totalVotes: 13,
+    city: "شهرکرد",
     address: "شهرکرد, خ جمال الدین جنب ایران چاپ ",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
     brief: "کارشناسی مامایی",
@@ -293,6 +310,7 @@ export const doctors: DoctorModel[] = [
     gender: "خانم",
     averageRating: 4.54,
     totalVotes: 200,
+    city: "تهران",
     address:
       "تهران,فلکه دوم تهرانپارس ابتدای خیابان جشنواره ساختمان پزشکان ابن سینا طبقه اول واحد 6",
     firstAvailableAppointment: "کمتر از ۱ ساعت",
