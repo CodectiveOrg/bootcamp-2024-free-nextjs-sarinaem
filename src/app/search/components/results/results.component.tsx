@@ -49,15 +49,15 @@ export default function ResultsComponent(): ReactElement {
                 {typeof doctor.averageRating === "number"
                   ? Math.floor(doctor.averageRating * 10) / 10
                   : Math.floor(parseFloat(doctor.averageRating) * 10) / 10}{" "}
-              </span>{" "}
+              </span>
               <span className={styles["total-votes"]}>
                 ({doctor.totalVotes} نظر)
               </span>
             </div>
             <div className={styles.caption}>
-              اولین نوبت: {doctor.firstAvailableAppointment}
+              اولین نوبت خالی : {doctor.firstAvailableAppointment}
             </div>
-            <Link href={`/doctor/${doctor.id}`}>نوبت‌دهی آنلاین</Link>
+            <Link href={`/doctor/${doctor.id}`}>مشاهده پروفایل</Link>
           </div>
         </li>
       ))}

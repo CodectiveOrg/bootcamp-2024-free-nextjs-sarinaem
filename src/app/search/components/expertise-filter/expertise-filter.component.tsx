@@ -9,16 +9,15 @@ import { FiltersContext } from "@/app/search/provider/filter/filter.provider";
 import styles from "./expertise-filter.module.css";
 
 const options: string[] = [
-  "زنان، زایمان و نازایی",
-  "قلب و عروق",
-  "خون و سرطان",
-  "پزشک عمومی",
+  "زنان",
+  "قلب",
+  "خون",
+  "عمومی",
   "تغذیه",
   "عفونی",
-  "مغز و اعصاب",
+  "اعصاب",
   "زیبایی",
   "دیابت",
-  "تصویربرداری",
 ];
 
 export default function ExpertiseFilterComponent(): ReactElement {

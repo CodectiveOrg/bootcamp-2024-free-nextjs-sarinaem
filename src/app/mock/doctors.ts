@@ -16,7 +16,7 @@ export const doctors: DoctorModel[] = [
     brief: "عفونت مغزی،عفونت گوش و حلق و بینی،سلولیت",
     degree: "متخصص",
     expertise: "عفونی",
-    badges: [],
+    badges: ["بیماران وفادار ❤"],
   },
   {
     id: "b6ffbd14-4a54-48c9-8a74-0e9b34fc6ed1",
@@ -71,7 +71,7 @@ export const doctors: DoctorModel[] = [
       "بهداشت باروری، بهداشت جنسی، روابط زناشویی، واژینسموس، تنظیم خانواده، درمان کاهش و افزایش میل جنسی، اختلالات جنسی زوجین، مشاوره یائسگی، اختلالات قاعدگی",
     degree: "کاردان",
     expertise: "زنان، زایمان و نازایی",
-    badges: [],
+    badges: ["پیشنهاد مراجعین"],
   },
   {
     id: "1a8daf37-714a-45ac-91e6-e0f6992d88a1",
@@ -103,7 +103,7 @@ export const doctors: DoctorModel[] = [
     city: "اهواز",
     address:
       "اهواز,مطب اول: کیانپارس، نبش خیابان 13 غربی، درمانگاه شبانه روزی فرهنگیان: مطب دوم : پادادشهر. خیابان 10 پاداد. درمانگاه شبانه روزی اَمان شماره تماس مطب: 09106433945_06133346824",
-    firstAvailableAppointment: "کمتر از ۱ ساعت",
+    firstAvailableAppointment: "کمتر از ۵ ساعت",
     brief: "کارشناس علوم تغذیه",
     degree: "کارشناس",
     expertise: "تغذیه",
@@ -308,7 +308,7 @@ export const doctors: DoctorModel[] = [
       "/getImage/p24/search-men/89fc445342ac78f79191e829134c2405.jpg?size=150",
     isVerified: true,
     gender: "خانم",
-    averageRating: 4.54,
+    averageRating: 4,
     totalVotes: 200,
     city: "تهران",
     address:

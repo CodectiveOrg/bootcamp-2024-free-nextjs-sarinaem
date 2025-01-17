@@ -34,6 +34,12 @@ export default async function Page({
     <FilterProvider defaultFilters={defaultFilters}>
       <DoctorsProvider doctors={doctors}>
         <div className={styles.page}>
+          <div className={styles.title}>
+            <h1>جستجوی پزشک</h1>
+            <div className={styles.stats}>
+              <StatsComponent />
+            </div>
+          </div>
           <div className={styles.search}>
             <GlobalSearchBoxComponent />
           </div>
@@ -46,9 +52,6 @@ export default async function Page({
             </div>
             <div className={styles.toolbar}>
               <AppointmentFilterComponent />
-              <div className={styles.stats}>
-                <StatsComponent />
-              </div>
             </div>
             <div className={styles.results}>
               <ResultsComponent />

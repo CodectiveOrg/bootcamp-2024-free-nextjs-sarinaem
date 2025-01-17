@@ -11,7 +11,7 @@ export default function StatsComponent(): ReactElement {
 
   return (
     <div className={styles.stats}>
-      {filteredDoctors.length.toLocaleString()} نتیجه
+      {filteredDoctors.length.toLocaleString()} پزشک یافت شد
     </div>
   );
 }
