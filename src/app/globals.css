@@ -1,33 +1,104 @@
 :root {
-  --color-gray-98: hsl(0deg 0% 98%);
-  --color-gray-90: hsl(0deg 0% 90%);
-  --color-gray-80: hsl(0deg 0% 80%);
-  --color-gray-70: hsl(0deg 0% 70%);
-  --color-gray-40: hsl(0deg 0% 40%);
-  --color-gray-30: hsl(0deg 0% 30%);
-  --color-gray-20: hsl(0deg 0% 20%);
-  --color-gray-16: hsl(0deg 0% 16%);
-  --color-gray-12: hsl(0deg 0% 12%);
-  --color-gray-10: hsl(0deg 0% 10%);
+  .dark {
+    --color-gray-98: hsl(0deg 0% 98%);
+    --color-gray-90: hsl(0deg 0% 90%);
+    --color-gray-80: hsl(0deg 0% 80%);
+    --color-gray-70: hsl(0deg 0% 70%);
+    --color-gray-40: hsl(0deg 0% 40%);
+    --color-gray-30: hsl(0deg 0% 30%);
+    --color-gray-20: hsl(0deg 0% 20%);
+    --color-gray-16: hsl(0deg 0% 16%);
+    --color-gray-12: hsl(0deg 0% 12%);
+    --color-gray-10: hsl(0deg 0% 10%);
 
-  --color-default-background: var(--color-gray-10);
-  --color-default-foreground: var(--color-gray-98);
+    --color-default-background: var(--color-gray-10);
+    --color-default-foreground: var(--color-gray-98);
 
-  --color-primary: hsl(41, 92%, 61%);
-  --color-primary-fade: hsl(120deg 50% 96%);
-  --color-primary-lighter: hsl(41, 92%, 43%);
-  --color-primary-darker: hsl(41, 92%, 55%);
-  --color-primary-opposite: var(--color-gray-10);
-  --color-secendry: hsl(256, 98%, 37%);
+    --color-primary: hsl(41, 92%, 61%);
+    --color-primary-fade: hsl(120deg 50% 96%);
+    --color-primary-lighter: hsl(41, 92%, 43%);
+    --color-primary-darker: hsl(41, 92%, 55%);
+    --color-primary-opposite: var(--color-gray-10);
+    --color-secendry: hsl(256, 98%, 37%);
 
-  --border-radius: 0.875rem;
+    --color-background: hsl(0, 0%, 44%);
+    --color-text: hsl(0, 0%, 0%);
 
-  --full-width: 75rem;
-  --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
+    --color-denger: hsl(0, 100%, 50%);
+    --color-denger-light: hsla(0, 100%, 56%, 0.809);
+    --color-denger-dark: hsla(0, 100%, 50%, 0.625);
 
-  --animation-duration-fast: 0.1s;
-  --animation-duration-normal: 0.5s;
-  --animation-duration-slow: 1s;
+    --color-star: hsl(41, 100%, 50%);
+
+    --shadow-300: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-400: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-500: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-700: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-800: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-900: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+    --border-radius: 0.75rem;
+
+    --full-width: 75rem;
+    --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
+
+    --animation-duration-fast: 0.1s;
+    --animation-duration-normal: 0.5s;
+    --animation-duration-slow: 1s;
+  }
+
+  .light {
+    --color-gray-98: hsl(0deg 0% 10%);
+    --color-gray-90: hsl(0deg 0% 12%);
+    --color-gray-80: hsl(0deg 0% 16%);
+    --color-gray-70: hsl(0deg 0% 20%);
+    --color-gray-40: hsl(0deg 0% 30%);
+    --color-gray-30: hsl(0deg 0% 40%);
+    --color-gray-20: hsl(0, 0%, 100%);
+    --color-gray-16: hsl(0deg 0% 80%);
+    --color-gray-12: hsl(0deg 0% 90%);
+    --color-gray-10: hsl(0deg 0% 98%);
+
+    --color-default-background: var(--color-gray-10);
+    --color-default-foreground: var(--color-gray-98);
+
+    --color-primary: hsl(248, 100%, 66%);
+    --color-primary-fade: hsl(0, 0%, 73%);
+    --color-primary-lighter: hsl(0, 0%, 100%);
+    --color-primary-darker: hsl(0, 0%, 100%);
+    --color-primary-opposite: var(--color-gray-98);
+    --color-secendry: hsl(256, 98%, 37%);
+
+    --color-background: hsl(0, 0%, 100%);
+    --color-text: hsl(0, 0%, 0%);
+
+    --color-denger: hsl(0, 100%, 50%);
+    --color-denger-light: hsla(0, 100%, 56%, 0.809);
+    --color-denger-dark: hsla(0, 100%, 50%, 0.625);
+
+    --color-star: hsl(41, 100%, 50%);
+    --shadow-300: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-400: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-500: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-700: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow-800: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    --shadow-900: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+    --border-radius: 0.75rem;
+
+    --full-width: 75rem;
+    --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
+
+    --animation-duration-fast: 0.1s;
+    --animation-duration-normal: 0.5s;
+    --animation-duration-slow: 1s;
+  }
 }
 
 *,
@@ -40,7 +111,16 @@
 }
 
 html {
+  caret-color: var(--color-primary);
+  accent-color: var(--color-primary);
+}
+
+html.dark {
   color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
 }
 
 input,
@@ -87,11 +167,9 @@ body {
     padding-inline: var(--full-width-padding-inline);
   }
 
-  .tagline {
+  .line {
     background-color: var(--color-gray-16);
 
-    padding-block: 1rem;
-
-    text-align: center;
+    padding-block-end: 0.01rem;
   }
 }

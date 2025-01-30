@@ -25,7 +25,7 @@ export default function Error({ error, reset }: Props): ReactElement {
         <Image src={errorImage} alt="" />
       </div>
       <div className={styles.actions}>
-        <button onClick={reset}>تلاش مجدد</button>
+        <button onClick={reset}>دوباره تلاش کنید</button>
       </div>
       <div className={styles.trace}>
         <details>

@@ -3,7 +3,6 @@ import { ReactElement } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import idkLogo from "@/assets/logo/idk.svg";
 import certificateLogo from "@/assets/logo/certificate.svg";
 import enamadLogo from "@/assets/logo/enamad.svg";
 
@@ -19,24 +18,19 @@ export default function FooterComponent(): ReactElement {
       <div className={styles.writings}>
         <div className={styles.logo}>پزشک‌یاب</div>
         <p className={styles.description}>
-          تجربه مشاوره آنلاین و دریافت نوبت از بهترین پزشکان و بیمارستان‌های
-          ایران
+          تجربه مشاوره آنلاین و دریافت نوبت غیرحضوری از بهترین پزشکان و
+          بیمارستان‌های کل کشور
         </p>
       </div>
       <div className={styles.visuals}>
         <ul className={styles.certificates}>
           <li>
             <Link href="#">
-              <Image src={idkLogo} alt="IDK Logo" />
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
               <Image src={certificateLogo} alt="Certificate Logo" />
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link href="https://enamad.ir/">
               <Image src={enamadLogo} alt="Enamad Logo" />
             </Link>
           </li>
@@ -49,7 +43,7 @@ export default function FooterComponent(): ReactElement {
           </li>
           <li>
             <Link
-              href="https://www.linkedin.com/in/bijanprogrammer/"
+              href="https://www.linkedin.com/in/sarinaemadi/"
               target="_blank"
             >
               <MingcuteLinkedinLine />
@@ -67,7 +61,8 @@ export default function FooterComponent(): ReactElement {
       </div>
       <p className={styles.copy}>
         تمامی حقوق مادی و معنوی این وب‌سایت، خدمات و محتوای مربوط به آن متعلق به
-        من است!
+        <b> Codective </b>
+        است
       </p>
     </footer>
   );

@@ -29,6 +29,8 @@
     .certificates {
       display: flex;
       gap: 2rem;
+
+      margin-top: 0.5rem;
     }
 
     .socials {
@@ -37,7 +39,7 @@
 
       > li {
         a {
-          font-size: var(--fz-500);
+          font-size: 1.5em;
         }
       }
     }

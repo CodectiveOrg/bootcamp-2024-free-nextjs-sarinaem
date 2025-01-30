@@ -1,0 +1,33 @@
+.expertise-filter {
+  background-color: var(--color-gray-10);
+
+  overflow: auto;
+
+  max-block-size: 12rem;
+
+  scrollbar-width: thin;
+
+  &:hover {
+    background-color: var(--color-gray-20);
+  }
+
+  > li {
+    button {
+      background-color: transparent;
+
+      inline-size: 100%;
+
+      border: none;
+
+      padding: 0.25rem 0.5rem;
+
+      text-align: start;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-gray-10);
+      }
+    }
+  }
+}

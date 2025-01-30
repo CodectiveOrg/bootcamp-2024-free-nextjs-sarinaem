@@ -29,9 +29,7 @@ export default function RootLayout({
       <body>
         <HeaderComponent />
         <main>{children}</main>
-        <p className="tagline">
-          نوبت‌دهی پزشکی، سامانه نوبت‌دهی اینترنتی بیمارستان و پزشکان
-        </p>
+        <hr className="line" />
         <FooterComponent />
       </body>
     </html>

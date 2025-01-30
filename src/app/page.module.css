@@ -32,6 +32,8 @@
       > li {
         background-color: var(--color-gray-20);
 
+        box-shadow: var(--shadow-400);
+
         padding: 0.25rem 0.75rem;
 
         border-radius: 999rem;
